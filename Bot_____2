@@ -442,7 +442,7 @@ function Library.xova()
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0.1, 0, 0.95, 0)
 	Logo.Size = UDim2.new(0, 55, 0, 55)
-	Logo.Image = "rbxassetid://14572696504"
+	Logo.Image = "rbxassetid://12781257228"
 
 	function Library.Notifcation(options)
 
