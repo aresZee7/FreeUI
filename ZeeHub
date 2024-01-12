@@ -122,16 +122,18 @@ function library:XoxHi()
 
     OpenUI = true
     UserInputService.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.RightControl then
-			if OpenUI == true then
-                OpenUI = false
-                Main.ClipsDescendants = true
-				Main:TweenSize(UDim2.new(0,0,0,0),"Out","Back",.3,true)
-			else
-				OpenUI = true
-                Main:TweenSize(UDim2.new(0,550,0,365),"Out","Back",.3,true)
+		pcall(function()
+			if input.KeyCode == Enum.KeyCode.RightControl then
+				if OpenUI == true then
+	                OpenUI = false
+	                Main.ClipsDescendants = true
+					Main:TweenSize(UDim2.new(0,0,0,0),"Out","Back",.3,true)
+				else
+					OpenUI = true
+	                Main:TweenSize(UDim2.new(0,550,0,365),"Out","Back",.3,true)
+				end
 			end
-		end
+		end)
 	end)
 
     local UIStroke = Instance.new("UIStroke")
@@ -177,7 +179,7 @@ function library:XoxHi()
     TextHub.Position = UDim2.new(0.0923681557, 0, 0.218966261, 0)
     TextHub.Size = UDim2.new(0, 90, 0, 16)
     TextHub.Font = Enum.Font.FredokaOne
-    TextHub.Text = "Hub | UI V 2.0.2 | Update Sea Event and Fix"
+    TextHub.Text = "Hub | Next Gen | Zee X Delta"
     TextHub.TextColor3 = Color3.new(1, 0, 0)
     TextHub.TextSize = 16
     TextHub.TextXAlignment = Enum.TextXAlignment.Left
