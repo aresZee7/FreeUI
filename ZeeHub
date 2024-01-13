@@ -179,7 +179,7 @@ function library:XoxHi()
     TextHub.Position = UDim2.new(0.0923681557, 0, 0.218966261, 0)
     TextHub.Size = UDim2.new(0, 90, 0, 16)
     TextHub.Font = Enum.Font.FredokaOne
-    TextHub.Text = "Hub | Next Gen | Zee X Delta"
+    TextHub.Text = "Hub | Fix Sea Event and Update Event"
     TextHub.TextColor3 = Color3.new(1, 0, 0)
     TextHub.TextSize = 16
     TextHub.TextXAlignment = Enum.TextXAlignment.Left
